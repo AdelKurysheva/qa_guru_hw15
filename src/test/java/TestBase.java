@@ -12,8 +12,8 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
-        Configuration.browser = "firefox";
-        // Configuration.browserVersion = "100.0";
+        Configuration.browser = "chrome";
+        Configuration.browserVersion = "100.0";
         Configuration.baseUrl = "https://kontur.ru/";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
