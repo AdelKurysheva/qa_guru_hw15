@@ -15,7 +15,7 @@ public class KonturTest extends TestBase {
             open("/career");
         });
         step("Нажимаем 'Кандидатам'", () -> {
-            $("a[href*='/career/vacancies/conditions']").click();
+            $("a[href*='career/vacancies/conditions']").click();
             Thread.sleep(60);
         });
         step("Проверяем, что на странице содержится заголовок 'Как попасть на работу в Контур'", () -> {
