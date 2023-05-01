@@ -13,7 +13,6 @@ public class KonturTest extends TestBase {
 
         step("Открываем страницу поиска вакансий", () -> {
             open("/career");
-            Thread.sleep(180);
         });
         step("Нажимаем 'Кандидатам'", () -> {
             $("a[href*='/career/vacancies/conditions']").click();
