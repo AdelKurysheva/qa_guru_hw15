@@ -11,9 +11,10 @@ import java.util.Map;
 public class TestBase {
     @BeforeAll
     static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://kontur.ru");
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("browserVersion","100");
         Configuration.baseUrl = "https://kontur.ru";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
